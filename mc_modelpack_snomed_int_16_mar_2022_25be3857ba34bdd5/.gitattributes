@@ -1,0 +1,2 @@
+cdb.dat filter=lfs diff=lfs merge=lfs -text
+vocab.dat filter=lfs diff=lfs merge=lfs -text

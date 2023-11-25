@@ -1,0 +1,48 @@
+{
+  "Model ID": "25be3857ba34bdd5",
+  "Last Modifed On": "16 March 2022",
+  "History (from least to most recent)": [
+    "a474096eb4566638",
+    "009617d7ff372682"
+  ],
+  "Description": "SNOMED INT enriched with UMLS and trained unsupervised on MIMIC-III",
+  "Source Ontology": "SnomedCT_InternationalRF2_PRODUCTION_20210131T120000Z",
+  "Location": "MedCAT Rosalind machine, available for public download from https://github.com/CogStack/MedCAT",
+  "MetaCAT models": {
+    "Status": "Detects is a concept Affirmed or Negated/Hypothetical"
+  },
+  "Basic CDB Stats": {
+    "Number of concepts": 354448,
+    "Number of names": 2049216,
+    "Number of concepts that received training": 29674,
+    "Number of seen training examples in total": 20585988,
+    "Average training examples per concept": 693.7382220125362
+  },
+  "Performance": {
+    "ner": {},
+    "meta": {}
+  },
+  "Important Parameters (Partial view, all available in cat.config)": {
+    "config.ner['min_name_len']": {
+      "value": 3,
+      "description": "Minimum detection length (found terms/mentions shorter than this will not be detected)."
+    },
+    "config.ner['upper_case_limit_len']": {
+      "value": 4,
+      "description": "All detected terms shorter than this value have to be uppercase, otherwise they will be ignored."
+    },
+    "config.linking['similarity_threshold']": {
+      "value": 0.2,
+      "description": "If the confidence of the model is lower than this a detection will be ignore."
+    },
+    "config.general['spell_check']": {
+      "value": true,
+      "description": "Is spell checking enabled."
+    },
+    "config.general['spell_check_len_limit']": {
+      "value": 7,
+      "description": "Words shorter than this will not be spell checked."
+    }
+  },
+  "MedCAT Version": "1.2.dev361"
+}
