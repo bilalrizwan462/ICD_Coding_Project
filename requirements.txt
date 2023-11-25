@@ -1,4 +1,4 @@
-custom_library/py2neo-2021.2.3.tar.gz
+custom_library
 charset-normalizer==2.1.1
 click==8.0.4
 gensim==4.1.2
